@@ -2,9 +2,9 @@
   "posts": [
 
     {
-      "title": "AI Becomes the Bait",
-      "slug": "ai_becomes_the_bait",
-      "file": "ai_becomes_the_bait.md",
+      "title": "Noodlophile: AI Becomes the Bait",
+      "slug": "Noodlophile",
+      "file": "Noodlophile.md",
       "date": "2025-01-19",
       "category": "AI Security",
       "excerpt": "A template post demonstrating how to structure cybersecurity content."
@@ -13,7 +13,7 @@
       "title": "AI Insider",
       "slug": "ai_insider",
       "file": "ai_insider.md",
-      "date": "2025-01-19",
+      "date": "2025-07-19",
       "category": "AI Security",
       "excerpt": "Another template post for cybersecurity insights."
     },
@@ -22,6 +22,38 @@
       "slug": "nist_and_ai",
       "file": "nist_and_ai.md",
       "date": "2025-01-19",
+      "category": "Security",
+      "excerpt": "Another template post for cybersecurity insights."
+    },
+    {
+      "title": "EchoLeak",
+      "slug": "echoleak",
+      "file": "echoleak.md",
+      "date": "2025-08-19",
+      "category": "Security",
+      "excerpt": "Another template post for cybersecurity insights."
+    },
+    {
+      "title": "Supplychain Attacks",
+      "slug": "supplychain_attacks",
+      "file": "supplychain_attacks.md",
+      "date": "2025-09-19",
+      "category": "Security",
+      "excerpt": "Another template post for cybersecurity insights."
+    },
+    {
+      "title": "Lockbit Breach",
+      "slug": "lockbit_breach",
+      "file": "lockbit_breach.md",
+      "date": "2025-07-19",
+      "category": "Security",
+      "excerpt": "Another template post for cybersecurity insights."
+    },
+    {
+      "title": "AI Persona Engine",
+      "slug": "ai_personas",
+      "file": "ai_personas.md",
+      "date": "2025-07-19",
       "category": "Security",
       "excerpt": "Another template post for cybersecurity insights."
     }

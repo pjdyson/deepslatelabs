@@ -1,17 +1,5 @@
----
-type: Article
-collections: Blog Posting
-title: 'Draft: NIST and AI'
-description: null
-icon: null
-createdAt: '2025-08-13T18:02:24.256Z'
-creationDate: 2025-08-13 19:02
-tags: [Linkedin]
-coverImage: null
-status: 99 - Published
----
 
-## Introduction: Understanding the Role of AI and Automation in NIST CSF 2.0
+# Introduction: Understanding the Role of AI and Automation in NIST CSF 2.0
 
 The **NIST Cybersecurity Framework (CSF) 2.0** is widely recognized as the gold standard for managing cybersecurity risk. It provides a comprehensive, flexible, and outcome-focused approach to building robust cybersecurity programs. However, its technology-agnostic design, while ensuring broad applicability, creates a notable gap: **it does not explicitly address how AI and automation can transform cybersecurity from a static compliance exercise into a dynamic, adaptive defense**.
 
@@ -161,20 +149,4 @@ The question is no longer just *"Are we compliant?"* but *"Where are we using AI
 The next step is to pilot AI and automation in high-impact areas—such as threat detection or incident response—and measure the improvements in speed, accuracy, and cost savings.
 
 The future of cybersecurity lies not in meeting standards, but in **exceeding them**.
-
----
-
-### About the Author
-
-**Peter D.**
-
-- Cyber Risk Quantification & AI-Driven Security
-
-- LinkedIn Profile (#) | Kovrr (#)
-
-*"Helping organizations move from compliance to performance in cyber risk management."*
-
----
-
-**Let’s Discuss!** Where have you seen AI and automation make a real difference in cybersecurity? Share your experiences and questions in the comments—I’d love to hear from you! 🚀
 

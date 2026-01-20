@@ -1,18 +1,6 @@
----
-type: Article
-collections: Blog Posting
-title: 'DRAFT: AI INSIDER'
-description: null
-icon: 💼
-createdAt: '2025-09-01T08:14:50.359Z'
-creationDate: 2025-09-01 09:14
-tags: [Linkedin]
-coverImage: null
-status: 99 - Published
----
 
-**AI doesn’t need malicious intent to become an insider threat.
-​Sometimes it simply follows orders too well.**
+# AI doesn’t need malicious intent to become an insider threat.
+### ​Sometimes it simply follows orders too well.
 
 
 
