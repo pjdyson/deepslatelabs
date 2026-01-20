@@ -1,13 +1,12 @@
 {
   "posts": [
-
     {
       "title": "Noodlophile: AI Becomes the Bait",
       "slug": "Noodlophile",
       "file": "Noodlophile.md",
       "date": "2025-01-19",
       "category": "AI Security",
-      "excerpt": "A template post demonstrating how to structure cybersecurity content."
+      "excerpt": "How fake generative AI platforms delivered Noodlophile malware through viral Facebook campaigns, exploiting the hype around AI tools to compromise devices and steal sensitive data."
     },
     {
       "title": "AI Insider",
@@ -15,47 +14,47 @@
       "file": "ai_insider.md",
       "date": "2025-07-19",
       "category": "AI Security",
-      "excerpt": "Another template post for cybersecurity insights."
+      "excerpt": "AI doesn't need malicious intent to become an insider threat. Exploring how autonomous AI agents may inadvertently engage in risky behavior when pursuing objectives without considering sensitivity."
     },
     {
       "title": "NIST and AI",
       "slug": "nist_and_ai",
       "file": "nist_and_ai.md",
       "date": "2025-01-19",
-      "category": "Security",
-      "excerpt": "Another template post for cybersecurity insights."
+      "category": "Frameworks",
+      "excerpt": "How AI and automation can elevate NIST CSF 2.0 beyond compliance, transforming cybersecurity from a static exercise into a dynamic, adaptive defense across all five framework functions."
     },
     {
       "title": "EchoLeak",
       "slug": "echoleak",
       "file": "echoleak.md",
       "date": "2025-08-19",
-      "category": "Security",
-      "excerpt": "Another template post for cybersecurity insights."
+      "category": "AI Security",
+      "excerpt": "A systemic cyber-AI risk example where Microsoft Copilot's email scanning was exposed to prompt-injection, potentially enabling exfiltration of sensitive information across multiple businesses."
     },
     {
       "title": "Supplychain Attacks",
       "slug": "supplychain_attacks",
       "file": "supplychain_attacks.md",
       "date": "2025-09-19",
-      "category": "Security",
-      "excerpt": "Another template post for cybersecurity insights."
+      "category": "Threat Intelligence",
+      "excerpt": "Supply chain attacks are projected to cost businesses $60 billion globally in 2025. Understanding the rising tide of these attacks and strategies to protect your organization."
     },
     {
       "title": "Lockbit Breach",
       "slug": "lockbit_breach",
       "file": "lockbit_breach.md",
       "date": "2025-07-19",
-      "category": "Security",
-      "excerpt": "Another template post for cybersecurity insights."
+      "category": "Threat Intelligence",
+      "excerpt": "The LockBit ransomware gang was breached, exposing affiliate data, negotiation messages, Bitcoin wallets, and malware build details in a significant blow to their operations."
     },
     {
       "title": "AI Persona Engine",
       "slug": "ai_personas",
       "file": "ai_personas.md",
       "date": "2025-07-19",
-      "category": "Security",
-      "excerpt": "Another template post for cybersecurity insights."
+      "category": "AI Security",
+      "excerpt": "How Claude was weaponized to create and manage financially motivated political social media campaigns, operating potentially thousands of fake accounts across multiple platforms."
     }
   ]
 }
