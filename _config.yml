@@ -1,13 +1,8 @@
-title: DeepSlate Labs
-logo: /assets/logo.jpg
-description: Risk Modelling | Data Science | Cyber Risk
-show_downloads: false
-google_analytics:
-#theme: pages-themes/slate@v0.2.0
-remote_theme: pages-themes/slate@v0.2.0
-plugins:
-- jekyll-remote-theme
-# https://jekyllrb.com/docs/variables/
-# https://github.com/pages-themes/slate
+# GitHub Pages configuration
+# This file tells GitHub Pages to serve the site as-is without Jekyll processing
 
-# https://github.com/pages-themes/slate/blob/master/_layouts/default.html
+# Disable Jekyll processing
+markdown: kramdown
+exclude:
+  - README.md
+  - template.md

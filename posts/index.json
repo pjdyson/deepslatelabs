@@ -1,0 +1,29 @@
+{
+  "posts": [
+
+    {
+      "title": "AI Becomes the Bait",
+      "slug": "ai_becomes_the_bait",
+      "file": "ai_becomes_the_bait.md",
+      "date": "2025-01-19",
+      "category": "AI Security",
+      "excerpt": "A template post demonstrating how to structure cybersecurity content."
+    },
+    {
+      "title": "AI Insider",
+      "slug": "ai_insider",
+      "file": "ai_insider.md",
+      "date": "2025-01-19",
+      "category": "AI Security",
+      "excerpt": "Another template post for cybersecurity insights."
+    },
+    {
+      "title": "NIST and AI",
+      "slug": "nist_and_ai",
+      "file": "nist_and_ai.md",
+      "date": "2025-01-19",
+      "category": "Security",
+      "excerpt": "Another template post for cybersecurity insights."
+    }
+  ]
+}
