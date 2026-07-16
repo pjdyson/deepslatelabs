@@ -1,0 +1,240 @@
+# DeepSlate Weekly — source registry
+# Seed list for the weekly cyber-exposure newsletter collector.
+# Edit freely: add/remove sources, tune weights, expand thought_leaders via a research pass.
+
+meta:
+  cadence: weekly
+  lookback_days: 7          # only consider items published within this window
+  target_story_count: 5
+  timezone: Europe/London
+
+# ---------------------------------------------------------------------------
+# Editorial lens — what the newsletter is (and is not) about.
+# The scorer uses these to rank; see SKILL.md for the full rubric.
+# ---------------------------------------------------------------------------
+lens:
+  # Prioritise, in order:
+  include:
+    - major_incidents_with_loss_or_accumulation_angle   # breaches/outages where the story is the $ / systemic exposure
+    - models_and_methodology_for_quantifying_cyber_risk  # frameworks, papers, tooling, catastrophe/accumulation modelling
+  # Deliberately OUT of scope — down-rank hard or drop:
+  exclude:
+    - market_and_M&A_and_capital_moves     # rate changes, funding rounds, carrier launches, ILS capital raises
+    - regulation_and_policy                # new rules, compliance deadlines, government mandates
+    - vendor_marketing                     # thinly-veiled product pitches with no data or method
+  keywords_boost:                          # presence nudges score up
+    - accumulation
+    - aggregation
+    - systemic
+    - catastrophe
+    - loss estimate
+    - insured loss
+    - probable maximum loss
+    - tail risk
+    - correlated
+    - single point of failure
+    - quantification
+    - actuarial
+    - exceedance
+    - scenario
+  keywords_penalise:                       # presence nudges score down (market/reg noise)
+    - funding round
+    - rate increase
+    - capital raise
+    - appoints
+    - hires
+    - launches new
+    - compliance deadline
+    - fine
+
+# ---------------------------------------------------------------------------
+# Sources. Each entry: name, url (landing/insights page), rss (if known),
+# weight (0.5–1.5 authority multiplier), tags.
+# rss: null means "no known feed — collector should scrape the landing page".
+# ---------------------------------------------------------------------------
+sources:
+
+  brokers_reinsurers:
+    - name: Aon — Reinsurance & Cyber insights
+      url: https://www.aon.com/en/insights
+      rss: null
+      weight: 1.3
+      tags: [broker, reinsurance, thought-leadership]
+    - name: Marsh — Cyber risk insights
+      url: https://www.marsh.com/en/services/cyber-risk/insights.html
+      rss: null
+      weight: 1.3
+      tags: [broker, cyber]
+    - name: Guy Carpenter — Insights
+      url: https://www.guycarp.com/insights.html
+      rss: null
+      weight: 1.3
+      tags: [reinsurance, cyber, modelling]
+    - name: Gallagher Re — News & insights
+      url: https://www.ajg.com/gallagherre/news-and-insights/
+      rss: null
+      weight: 1.2
+      tags: [reinsurance, cyber]
+    - name: WTW (Willis) — Insights
+      url: https://www.wtwco.com/en-gb/insights
+      rss: null
+      weight: 1.2
+      tags: [broker, cyber]
+    - name: Howden — News & insights
+      url: https://www.howdengroup.com/news-and-insights
+      rss: null
+      weight: 1.2
+      tags: [broker, cyber]
+
+  cyber_analytics_and_modellers:
+    # Model/methodology vendors — high signal for the "quantification" lens.
+    - name: CyberCube — Reports & blog
+      url: https://insights.cybercube.com/
+      rss: null
+      weight: 1.3
+      tags: [modelling, accumulation, research]
+    - name: Cyentia Institute — Research (IRIS, etc.)
+      url: https://www.cyentia.com/research/
+      rss: null
+      weight: 1.4
+      tags: [research, data, quantification]
+    - name: Kovrr — Blog
+      url: https://www.kovrr.com/blog
+      rss: null
+      weight: 1.2
+      tags: [modelling, quantification]
+    - name: Moody's RMS — Cyber
+      url: https://www.rms.com/blog
+      rss: null
+      weight: 1.2
+      tags: [modelling, catastrophe]
+    - name: Coalition — Cyber claims & research
+      url: https://www.coalitioninc.com/blog
+      rss: null
+      weight: 1.2
+      tags: [insurer, claims-data]
+    - name: At-Bay — Research
+      url: https://www.at-bay.com/research/
+      rss: null
+      weight: 1.1
+      tags: [insurer, claims-data]
+    - name: Resilience — Insights
+      url: https://cyberresilience.com/threatonomics/
+      rss: null
+      weight: 1.1
+      tags: [insurer, quantification]
+    - name: Marsh McLennan Cyber Risk Analytics Center
+      url: https://www.marshmclennan.com/insights.html
+      rss: null
+      weight: 1.2
+      tags: [research, quantification]
+
+  trade_press:
+    - name: Artemis — Cyber ILS / cat bonds
+      url: https://www.artemis.bm/news/cyber/
+      rss: https://www.artemis.bm/feed/
+      weight: 1.1
+      tags: [ils, accumulation, capital]     # NB: capital moves are out-of-lens; use for accumulation stories
+    - name: Reinsurance News — Cyber
+      url: https://www.reinsurancene.ws/cyber/
+      rss: https://www.reinsurancene.ws/feed/
+      weight: 1.0
+      tags: [reinsurance]
+    - name: The Insurer / Insurance Insider — Cyber
+      url: https://www.theinsurer.com/
+      rss: null
+      weight: 1.0
+      tags: [market]
+    - name: Insurance Business Mag — Cyber
+      url: https://www.insurancebusinessmag.com/us/news/cyber/
+      rss: null
+      weight: 0.9
+      tags: [market]
+    - name: Intelligent Insurer — Cyber
+      url: https://www.intelligentinsurer.com/
+      rss: null
+      weight: 0.9
+      tags: [market]
+
+  security_press:
+    # For the incident facts / technical detail behind a loss story.
+    - name: BleepingComputer
+      url: https://www.bleepingcomputer.com/
+      rss: https://www.bleepingcomputer.com/feed/
+      weight: 1.0
+      tags: [incident, technical]
+    - name: The Record (Recorded Future)
+      url: https://therecord.media/
+      rss: https://therecord.media/feed/
+      weight: 1.0
+      tags: [incident, threat-intel]
+    - name: CyberScoop
+      url: https://cyberscoop.com/
+      rss: https://cyberscoop.com/feed/
+      weight: 0.9
+      tags: [incident, policy]
+    - name: KrebsOnSecurity
+      url: https://krebsonsecurity.com/
+      rss: https://krebsonsecurity.com/feed/
+      weight: 1.0
+      tags: [incident, investigation]
+
+  academic:
+    - name: arXiv cs.CR (Cryptography & Security) — recent
+      url: https://arxiv.org/list/cs.CR/recent
+      rss: http://export.arxiv.org/rss/cs.CR
+      weight: 1.1
+      tags: [academic, methodology]
+    - name: arXiv q-fin.RM (Risk Management) — recent
+      url: https://arxiv.org/list/q-fin.RM/recent
+      rss: http://export.arxiv.org/rss/q-fin.RM
+      weight: 1.0
+      tags: [academic, quantification]
+    - name: WEIS — Workshop on the Economics of Information Security
+      url: https://econinfosec.org/
+      rss: null
+      weight: 1.1
+      tags: [academic, cyber-economics]
+    # arXiv query hint for the collector (used with the arXiv API):
+    # search: (cyber AND (insurance OR risk OR "loss" OR accumulation OR systemic OR quantif*))
+    #         cat:(cs.CR OR q-fin.RM OR econ.GN OR stat.AP)
+
+# ---------------------------------------------------------------------------
+# Named thought leaders. Seeded from domain knowledge — EXPAND via a research
+# pass (see SKILL.md "Refresh thought leaders"). The collector should check
+# each person's recent public output (blog / org page / their posts) for
+# in-lens items in the lookback window.
+# ---------------------------------------------------------------------------
+thought_leaders:
+  - name: Sasha Romanosky
+    affiliation: RAND
+    focus: cyber risk economics, breach cost data
+    find_at: https://www.rand.org/about/people/r/romanosky_sasha.html
+    weight: 1.3
+  - name: Daniel W. Woods
+    affiliation: University of Edinburgh
+    focus: cyber insurance, security economics
+    find_at: https://www.danielwoods.info/
+    weight: 1.3
+  - name: Wade Baker
+    affiliation: Cyentia Institute / Virginia Tech
+    focus: security metrics, IRIS loss data
+    find_at: https://www.cyentia.com/
+    weight: 1.2
+  - name: Jason Healey
+    affiliation: Columbia SIPA
+    focus: systemic cyber risk, cyber conflict
+    find_at: https://www.sipa.columbia.edu/
+    weight: 1.2
+  - name: Tom Johansmeyer
+    affiliation: cyber ILS / catastrophe loss research
+    focus: cyber catastrophe, insured loss aggregation
+    find_at: https://www.linkedin.com/in/tomjohansmeyer/
+    weight: 1.1
+  - name: Rade Musulin
+    affiliation: actuary (Finity)
+    focus: catastrophe & cyber actuarial modelling
+    find_at: https://www.linkedin.com/in/rademusulin/
+    weight: 1.0
+  # TODO(research-pass): add broker/reinsurer chief cyber officers, CyberCube/RMS
+  # model leads, and academic PIs surfaced during the weekly run.
